@@ -1,0 +1,50 @@
+ S E R V E R				NPM INSTALL SQLITE3
+порт 8000
+cl1.db - таблица model_cl1s
+	* id
+	* data
+	* clNum
+	* clNumId
+
+context.js
+	это модуль
+	там параметры бд
+	sequelize (ORM-библ, сопост таблиц бд с классами
+		не пишем sql-запросы, раб. с д-ми как с объектами
+	* модель
+	* sequelize
+
+models/model.js
+	model_cl1 {	id : seq.INT;
+			data : seq.DATE;
+			clNum: seq.INT;
+			clNumId: seq.INT  }
+			(как в таблице)
+
+
+ C L I E N T  1
+порт 8001
+cl1.db - таблица model_cl1s
+	* id
+	* data
+	* clNum
+
+
+
+
+
+ C L I E N T 2
+порт 8003
+модель такая же
+clNum : 1 (client1) 2 (client2)
+
+app.get/update
+   синхронизация с центральной БД
+ * cl1: добавляет данные где clNum=2
+ * cl2: добавляет данные где clNim=1
+
+
+
+
+
+

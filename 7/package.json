@@ -1,0 +1,13 @@
+{
+  "name": "lab7",
+  "version": "1.0.0",
+  "author": "Daniil Voshchuk",
+  "scripts": {
+    "start:client": "node ./client.js",
+    "start:dispatcher": "node ./dispatcher/dispatcher.js",
+    "start:server3": "node ./time-service-3/server_3.js",
+    "start:server2": "node ./time-service-2/server_2.js",
+    "start:server1": "node ./time-service-1/server_1.js",
+    "start:all": "start npm run start:client && start npm run start:dispatcher && start npm run start:server3 && start npm run start:server2 && start npm run start:server1"
+  }
+}
